@@ -65,7 +65,7 @@
         .three{
             width: 100%;
             height: 90%;
-            background-image: url(./860c8df123844131ed36b3306e3664755d89e7b2.png);
+            background-image: url(images/860c8df123844131ed36b3306e3664755d89e7b2.png);
             background-size: 130%;
             border-radius: 10px;
             background-position: left bottom  ;
@@ -157,7 +157,7 @@
         .top1{
             width: 100%;
             height: 30%;
-           background-image: url(./Collection\ Header.png);
+           background-image: url(images/Collection\ Header.png);
            background-size:cover;
           background-position: center;
 
