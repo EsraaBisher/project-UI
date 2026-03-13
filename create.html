@@ -184,9 +184,36 @@
                         <h1>“I drink my coffee using _____, with a _____ type of bean. _____ , sent to me _____.”</h1>
                     </div>
                     <div class="bottom" data-aos="fade-left" data-aos-duration="1200">
-                    <button class="btn1">Create your plan</button>
-                    </div>              
+                    <button class="btn1"  onclick="document.getElementById('modal').showModal()">Create your plan</button>
+                    </div> 
+                
+                    <dialog class="col-lg-3 col-md-8 col-10" id="modal">
+                    <div id="wrapper">
+                        <div id="dialog-header" class="d-flex align-items-center ps-3"><h1>Order Summary</h1></div>
+
+                        <div id="modalContent" class="d-flex flex-column gap-2 align-items-start p-4">
+                            <h2>“I drink my coffee using <span class="Preferences_span" style="color: #0E8784;">_____</span>,
+                            with a<span class="BeanType_span" style="color: #0E8784;">_____</span> type of bean.
+                            <span class="Quantity_span" style="color: #0E8784;">_____</span> , sent to me <span class="GrindOption_span" style="color: #0E8784;">_____</span>.”
+                            </h2>
+                            <p class="col-10">Is this correct? You can proceed to checkout or go back to plan selection if something is off.
+                                Subscription discount codes can also be redeemed at the checkout.
+                            </p>
+                            <div class="col-12 d-md-flex d-none justify-content-between align-items-center">
+                                <h1>$14.00/ mo</h1>
+                                <button onclick="document.getElementById('modal').close()">Checkout</button>
+                            </div>
+                            <div class="col-12 d-md-none d-flex justify-content-between align-items-center">
+                               
+                                <button class="col-12" onclick="document.getElementById('modal').close()">Checkout - $14.00/ mo</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </dialog>
+
                 </div>
+
             </div>
         </div>
     </div>
@@ -206,6 +233,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./create.js"></script>
 
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -35,3 +35,13 @@ document.querySelectorAll(".div > div").forEach(option => {
     document.querySelector(".btn1").classList.add("active");
   });
 });
+
+
+// 
+const modal = document.getElementById("modal")
+const wrapper = document.getElementById("wrapper")
+modal.addEventListener('click', (e)=>{
+    if(!wrapper.contains(e.target)){
+        modal.close()
+    }
+})
